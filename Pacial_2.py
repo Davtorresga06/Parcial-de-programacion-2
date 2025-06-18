@@ -67,10 +67,13 @@ class BibliotecaApp:
         tk.Button(frame_busqueda, text="Mostrar Todos", command=self.cargar_libros_desde_firebase).grid(row=0, column=3, padx=5)  # Botón para mostrar todo
 
         # --------- TABLA PARA MOSTRAR LOS LIBROS ---------
-        self.lista_libros = ttk.Treeview(self.root, columns=("Autor", "Categoría", "Disponible", "Prestado a"), show="headings")  # Tabla
+        self.lista_libros = ttk.Treeview(self.root, columns=("Título", "Autor", "Categoría", "Disponible", "Prestado a"), show="headings")  # Tabla
         self.lista_libros.grid(row=2, column=0, padx=10, pady=10)
         for col in self.lista_libros["columns"]:
             self.lista_libros.heading(col, text=col)  # Encabezados de la tabla
+
+        # Mostrar columna de título como principal
+        self.lista_libros.column("Título", width=200, anchor="w")
 
         # --------- BOTONES DE ACCIÓN (PRESTADO / DEVUELTO) ---------
         frame_botones = tk.Frame(self.root)  # Marco para botones
@@ -116,7 +119,7 @@ class BibliotecaApp:
                 disponible = "Sí" if datos["disponible"] else "No"  # Convierte a texto
                 prestado_a = datos.get("prestado_a", "-")  # Si está prestado, muestra el correo
                 self.lista_libros.insert("", tk.END, iid=codigo, values=(
-                    datos["autor"], datos["categoria"], disponible, prestado_a
+                    datos["titulo"], datos["autor"], datos["categoria"], disponible, prestado_a
                 ))  # Inserta en la tabla
 
     def actualizar_estado(self, disponible):
@@ -150,7 +153,7 @@ class BibliotecaApp:
                     disponible = "Sí" if datos["disponible"] else "No"
                     prestado_a = datos.get("prestado_a", "-")
                     self.lista_libros.insert("", tk.END, iid=codigo, values=(
-                        datos["autor"], datos["categoria"], disponible, prestado_a
+                        datos["titulo"], datos["autor"], datos["categoria"], disponible, prestado_a
                     ))
 
 # --------- EJECUCIÓN PRINCIPAL ---------
@@ -158,4 +161,3 @@ if __name__ == "__main__":
     root = tk.Tk()  # Crea ventana principal
     app = BibliotecaApp(root)  # Inicia la aplicación
     root.mainloop()  # Ejecuta el bucle principal de la interfaz
-
