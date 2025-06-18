@@ -24,7 +24,7 @@ La separación de funciones mejora la organización del código y facilita el ma
 
 ![Captura de pantalla 2025-06-18 124312](https://github.com/user-attachments/assets/2ebd9bef-93a0-4888-bdbe-9618991e4bac)
 GUARDADO DEL LIBRO "LA LLORONA"
-![Captura de pantalla 2025-06-18 122050](https://github.com/user-attachments/assets/f28f4433-e9ed-436d-b261-c21f904b54c1)
 ![Captura de pantalla 2025-06-18 121857](https://github.com/user-attachments/assets/8051c948-1420-4dc9-851b-6a31fa3b6dce)
+iNICIO DE SESION
 ![Captura de pantalla 2025-06-18 123719](https://github.com/user-attachments/assets/63b976a9-0e39-4290-9567-e636edc1b677)
 ![Captura de pantalla 2025-06-18 123752](https://github.com/user-attachments/assets/0f0b64ab-2f6d-4023-867b-50dbee3ced27)
