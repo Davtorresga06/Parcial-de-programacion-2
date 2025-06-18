@@ -11,3 +11,6 @@ lISTA ACTUALIZADA DE LOS LIBROS
 
 ![Captura de pantalla 2025-06-18 123752](https://github.com/user-attachments/assets/0f0b64ab-2f6d-4023-867b-50dbee3ced27)
 BUSQUEDA DE "LIBRO LA LLORONA" GUARDADO
+
+![Captura de pantalla 2025-06-18 125231](https://github.com/user-attachments/assets/b32c9a33-29ad-4527-b880-7be62dfa7179)
+BASAE DE DATOS ACTUALIZADA
