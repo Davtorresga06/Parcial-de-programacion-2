@@ -158,3 +158,4 @@ if __name__ == "__main__":
     root = tk.Tk()  # Crea ventana principal
     app = BibliotecaApp(root)  # Inicia la aplicación
     root.mainloop()  # Ejecuta el bucle principal de la interfaz
+
